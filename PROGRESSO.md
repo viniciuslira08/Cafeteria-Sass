@@ -72,8 +72,34 @@ Olá! Estou continuando meu projeto de aprendizagem Cafeteria-Sass (SASS e BEM),
 - O `npm run sass` só funciona na raiz do projeto, onde está o `package.json`.
 - O terminal do `npm run sass` fica ocupado vigiando; outros comandos vão no segundo terminal.
 
-### Próximo passo (Dia 3)
+## Dia 3 - Git e GitHub pelo terminal
 
-- Criar o próximo bloco BEM (seção principal da página).
-- Treinar o `&:hover` nos links do cabeçalho.
-- Religar o vigia com `npm run sass` na raiz.
+### O que fiz
+1. Criei o repositório vazio `Cafeteria-Sass` no GitHub (público).
+2. Conferi que o Git está instalado com `git --version`.
+3. Criei o `.gitignore` com `node_modules/`, para não enviar as dependências.
+4. Iniciei o repositório local com `git init -b main`.
+5. Preparei os arquivos com `git add .` (10 arquivos, sem a `node_modules`).
+6. Configurei meu nome e e-mail com `git config --global user.name` e `git config --global user.email`.
+7. Fiz o primeiro commit com `git commit -m` e conferi com `git log --oneline`.
+8. Corrigi o autor do commit com `git commit --amend --reset-author --no-edit`.
+
+### O que aprendi
+- `git init` cria o repositório local; `git add` escolhe o que entra no commit; `git commit` grava uma "foto" do projeto no histórico.
+- O `.gitignore` lista o que o Git deve ignorar. A `node_modules` fica de fora porque o `npm install` recria a pasta a partir do `package.json`.
+- `git log --oneline` mostra o histórico resumido, um commit por linha.
+- O nome e o e-mail do Git identificam o autor dos commits e ficam visíveis em repositório público.
+- O `--amend` refaz o último commit. Só é seguro antes do `git push`, porque depois disso o commit já está no GitHub.
+- Se o prompt vira `>`, alguma aspa ficou aberta. Ctrl+C cancela a linha.
+- O terminal pode inserir um código invisível (`^[[200~`) ao colar, e o bash lê isso como parte do comando. Colar uma linha por vez ou rodar um `echo teste` antes resolve.
+- Para evitar aspas no teclado, usei `\` antes do espaço (`Vinicius\ Lira`) e hifens nas mensagens de commit.
+
+### Dificuldades
+- Aspas erradas (acento no lugar de aspa) gravaram símbolos no nome do autor. Corrigi com o `--amend` antes do push.
+- A colagem com `^[[200~` fez o comando não ser reconhecido na primeira tentativa.
+
+### Pendente
+- [ ] Conectar a pasta ao GitHub com `git remote add origin`
+- [ ] Enviar com `git push -u origin main`
+- [ ] Conferir os arquivos na página do repositório
+- [ ] Bloco principal BEM e `&:hover` (próximo conteúdo de SASS)
