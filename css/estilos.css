@@ -1,0 +1,26 @@
+.cabecalho {
+  background: #6f4e37;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cabecalho__logo {
+  color: #fdf6ec;
+}
+.cabecalho__menu {
+  display: flex;
+  gap: 1rem;
+}
+.cabecalho__link {
+  color: #fdf6ec;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background: #fdf6ec;
+  color: #6f4e37;
+}
+
+/*# sourceMappingURL=estilos.css.map */

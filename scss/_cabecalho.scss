@@ -1,0 +1,23 @@
+@use 'variaveis' as *;
+
+.cabecalho {
+  background: $cor-primaria;
+  padding: $espacamento-base * 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: $cor-fundo;
+  }
+
+  &__menu {
+    display: flex;
+    gap: $espacamento-base;
+  }
+
+  &__link {
+    color: $cor-fundo;
+    text-decoration: none;
+  }
+}

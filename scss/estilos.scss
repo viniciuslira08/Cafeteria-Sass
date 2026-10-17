@@ -1,0 +1,8 @@
+@use 'variaveis' as *;
+@use 'cabecalho';
+
+body {
+  margin: 0;
+  background: $cor-fundo;
+  color: $cor-primaria;
+}
