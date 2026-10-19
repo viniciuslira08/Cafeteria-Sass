@@ -1,0 +1,16 @@
+.destaque {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f5ebe0;
+
+  &__titulo {
+    font-size: 2.5rem;
+    color: #4a2c1a;
+    margin-bottom: 16px;
+  }
+
+  &__texto {
+    font-size: 1.2rem;
+    color: #6b4a35;
+  }
+}
