@@ -16,6 +16,10 @@
   color: #fdf6ec;
   text-decoration: none;
 }
+.cabecalho__link:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
 
 body {
   margin: 0;
