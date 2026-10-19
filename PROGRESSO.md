@@ -103,3 +103,31 @@ Olá! Estou continuando meu projeto de aprendizagem Cafeteria-Sass (SASS e BEM),
 - [ ] Enviar com `git push -u origin main`
 - [ ] Conferir os arquivos na página do repositório
 - [ ] Bloco principal BEM e `&:hover` (próximo conteúdo de SASS)
+
+## Dia 4 - Efeito hover nos links do menu
+
+### O que fiz
+- Abri o `scss/_cabecalho.scss` e adicionei um `&:hover` dentro do `&__link`, com `text-decoration: underline` e `opacity: 0.8`.
+- Rodei `npm run sass` para gerar o CSS novamente.
+- Procurei `.cabecalho__link:hover` no `css/estilos.css` e testei no navegador passando o mouse nos links.
+- Registrei no GitHub com `git add .`, `git commit` e `git push` (commit `7eea5ec`, 3 arquivos alterados: `_cabecalho.scss`, `estilos.css` e `estilos.css.map`).
+
+### O que aprendi
+- O `&` representa o seletor do pai. Dentro do `&__link`, o `&:hover` vira `.cabecalho__link:hover`.
+- A posição das chaves importa: o `&:hover` precisa ficar dentro do bloco do link. Fora dele, virou `.cabecalho:hover` e o efeito aparecia na faixa inteira.
+- O SASS só gera o CSS novo se o `npm run sass` estiver rodando.
+- O ciclo do Git que vou repetir em todo projeto: editar, `git add`, `git commit`, `git push`.
+- Depois do primeiro `git push`, o VS Code guardou meu login do GitHub, então não precisei de token.
+
+### Dificuldades
+- Coloquei o `&:hover` no lugar errado e só percebi pelo comportamento na página e pelo caminho no topo do editor (`.cabecalho > &__link > &:hover`).
+- O SASS não estava rodando, e por isso o CSS não mudou na primeira tentativa.
+
+### Concluído do Dia 3
+- Conectei a pasta ao GitHub com `git remote add origin` e enviei com `git push -u origin main`.
+- Conferi os arquivos na página do repositório (sem `node_modules`).
+
+### Pendente
+- [ ] Explicar com minhas palavras o que o `&` faz (linha do Dia 2)
+- [ ] Criar um README para o repositório
+- [ ] Estudar o bloco principal em BEM
