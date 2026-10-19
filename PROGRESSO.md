@@ -127,7 +127,22 @@ Olá! Estou continuando meu projeto de aprendizagem Cafeteria-Sass (SASS e BEM),
 - Conectei a pasta ao GitHub com `git remote add origin` e enviei com `git push -u origin main`.
 - Conferi os arquivos na página do repositório (sem `node_modules`).
 
+## Dia 5 - Bloco destaque em BEM
+
+### O que fiz
+- Criei no `index.html` a `<section class="destaque">` com os elementos `destaque__titulo` e `destaque__texto`, depois do `</header>`.
+- Criei o partial `scss/_destaque.scss` e importei no `estilos.scss` com `@use 'destaque';`.
+- Rodei `npm run sass`, conferi a página no navegador e registrei no GitHub (commit `556da46`).
+
+### O que aprendi
+- Um bloco BEM é um componente independente. O `destaque` fica ao lado do `cabecalho`, e não dentro dele.
+- Os elementos levam o nome do bloco na frente: `destaque__titulo` e `destaque__texto`.
+- Um partial novo só vale depois de ser importado no `estilos.scss` com `@use`.
+
+### Dificuldades
+- Colei o trecho dentro do `<header>`, junto com um `<body>` extra, e precisei reorganizar o HTML.
+- O CSS não mudou até eu rodar o `npm run sass`.
+
 ### Pendente
-- [ ] Explicar com minhas palavras o que o `&` faz (linha do Dia 2)
+- [ ] Explicar com minhas palavras o que o `&` faz
 - [ ] Criar um README para o repositório
-- [ ] Estudar o bloco principal em BEM
